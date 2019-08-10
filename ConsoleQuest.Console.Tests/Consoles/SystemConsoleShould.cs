@@ -37,5 +37,17 @@ namespace ConsoleQuest.Console.Tests.Consoles
             
             console.GetLastBuffered().ShouldBeNull();
         }
+
+        [Test]
+        public void HaveAnEmptyQueueWhenFlushed()
+        {
+            var console = new SystemConsole();
+            var data = new ConsoleData("Test Data");
+            
+            console.BufferData(data);
+            console.Flush();
+            
+            console.GetBuffered().ShouldBeEmpty();
+        }
     }
 }

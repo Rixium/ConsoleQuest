@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using ConsoleQuest.Console.Data;
 
@@ -26,8 +25,6 @@ namespace ConsoleQuest.Console.Consoles
             {
                 Output(_dataQueue.Dequeue());
             }
-
-            ResetBuffer();
         }
 
         public void Output(IConsoleData data)
