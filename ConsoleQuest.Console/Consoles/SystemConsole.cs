@@ -6,7 +6,7 @@ namespace ConsoleQuest.Console.Consoles
 {
     public class SystemConsole : IConsole
     {
-        private Queue<IConsoleData> _dataQueue;
+        private readonly Queue<IConsoleData> _dataQueue;
         private IConsoleData _lastData;
 
         public SystemConsole()
