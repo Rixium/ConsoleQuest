@@ -9,6 +9,6 @@ namespace ConsoleQuest.Console.Consoles
         void Flush();
         void ResetBuffer();
         IEnumerable<IConsoleData> GetBuffered();
-        IConsoleData GetLast();
+        IConsoleData GetLastBuffered();
     }
 }

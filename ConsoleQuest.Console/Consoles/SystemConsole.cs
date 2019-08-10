@@ -45,9 +45,9 @@ namespace ConsoleQuest.Console.Consoles
             return _dataQueue;
         }
 
-        public IConsoleData GetLast()
+        public IConsoleData GetLastBuffered()
         {
-            return _lastData ?? throw new NullReferenceException();
+            return _lastData;
         }
     }
 }

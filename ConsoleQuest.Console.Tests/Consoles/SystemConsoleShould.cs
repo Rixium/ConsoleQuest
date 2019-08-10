@@ -15,7 +15,7 @@ namespace ConsoleQuest.Console.Tests.Consoles
 
             console.BufferData(data);
 
-            console.GetLast().ShouldBe(data);
+            console.GetLastBuffered().ShouldBe(data);
         }
 
         [Test]
@@ -28,6 +28,14 @@ namespace ConsoleQuest.Console.Tests.Consoles
             console.ResetBuffer();
 
             console.GetBuffered().ShouldBeEmpty();
+        }
+
+        [Test]
+        public void ReturnNullWhenRetrievingLastBufferedWhenNotSet()
+        {
+            var console = new SystemConsole();
+            
+            console.GetLastBuffered().ShouldBeNull();
         }
     }
 }
