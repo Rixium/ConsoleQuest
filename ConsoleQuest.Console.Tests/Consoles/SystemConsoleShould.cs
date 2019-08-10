@@ -49,5 +49,13 @@ namespace ConsoleQuest.Console.Tests.Consoles
             
             console.GetBuffered().ShouldBeEmpty();
         }
+
+        [Test]
+        public void ShouldNotThrowWhenFlushingEmptyQueue()
+        {
+            var console = new SystemConsole();
+
+            Should.NotThrow(console.Flush);
+        }
     }
 }
