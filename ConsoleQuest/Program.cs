@@ -1,6 +1,4 @@
-﻿using System;
-using ConsoleQuest.Console;
-using ConsoleQuest.Console.Consoles;
+﻿using ConsoleQuest.Console.Consoles;
 using ConsoleQuest.Console.Data;
 
 namespace ConsoleQuest
