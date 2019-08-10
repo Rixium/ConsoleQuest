@@ -12,7 +12,7 @@ namespace ConsoleQuest
         static void Main(string[] args)
         {
             _console = new SystemConsole();
-            _console.QueueData(new ConsoleData("Hello World!"));
+            _console.BufferData(new ConsoleData("Hello World!"));
             _console.Flush();
             System.Console.WriteLine(_console.GetLast().Read());
         }

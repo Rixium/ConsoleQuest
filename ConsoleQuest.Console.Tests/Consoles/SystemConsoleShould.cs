@@ -13,9 +13,21 @@ namespace ConsoleQuest.Console.Tests.Consoles
             var console = new SystemConsole();
             var data = new ConsoleData("Test Data");
 
-            console.QueueData(data);
+            console.BufferData(data);
 
             console.GetLast().ShouldBe(data);
+        }
+
+        [Test]
+        public void EmptyBufferOnReset()
+        {
+            var console = new SystemConsole();
+            var data = new ConsoleData("Test Data");
+            
+            console.BufferData(data);
+            console.ResetBuffer();
+
+            console.GetBuffered().ShouldBeEmpty();
         }
     }
 }

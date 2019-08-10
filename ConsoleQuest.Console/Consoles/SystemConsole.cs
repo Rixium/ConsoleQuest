@@ -14,7 +14,7 @@ namespace ConsoleQuest.Console.Consoles
             _dataQueue = new Queue<IConsoleData>();
         }
 
-        public void QueueData(IConsoleData data)
+        public void BufferData(IConsoleData data)
         {
             _dataQueue.Enqueue(data);
             _lastData = data;
@@ -27,7 +27,7 @@ namespace ConsoleQuest.Console.Consoles
                 Output(_dataQueue.Dequeue());
             }
 
-            ResetQueue();
+            ResetBuffer();
         }
 
         public void Output(IConsoleData data)
@@ -35,9 +35,14 @@ namespace ConsoleQuest.Console.Consoles
             System.Console.WriteLine(data.Read());
         }
 
-        public void ResetQueue()
+        public void ResetBuffer()
         {
             _dataQueue.Clear();
+        }
+
+        public IEnumerable<IConsoleData> GetBuffered()
+        {
+            return _dataQueue;
         }
 
         public IConsoleData GetLast()
