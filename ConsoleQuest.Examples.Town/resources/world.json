@@ -1,0 +1,11 @@
+{
+  "Name" : "Town",
+  "Rooms": [
+    {
+      "TownCenter": {
+        "Name" : "Town Center",
+        "Description" : "A lovely town center filled with numerous people."
+      }   
+    }
+  ]
+}

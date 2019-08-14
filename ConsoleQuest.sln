@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleQuest.Console", "Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleQuest.Console.Tests", "ConsoleQuest.Console.Tests\ConsoleQuest.Console.Tests.csproj", "{8233BB13-3935-4D98-9096-D955B2ED11E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleQuest.Examples.Town", "ConsoleQuest.Examples.Town\ConsoleQuest.Examples.Town.csproj", "{19592AC4-5BBC-437B-9E0E-CF280D45D629}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{8233BB13-3935-4D98-9096-D955B2ED11E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8233BB13-3935-4D98-9096-D955B2ED11E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8233BB13-3935-4D98-9096-D955B2ED11E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19592AC4-5BBC-437B-9E0E-CF280D45D629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19592AC4-5BBC-437B-9E0E-CF280D45D629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19592AC4-5BBC-437B-9E0E-CF280D45D629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19592AC4-5BBC-437B-9E0E-CF280D45D629}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
